@@ -1,4 +1,5 @@
 {
+    "PythonVersion": "3.6.1",
     "ProjectName": "Example-Project",
     "PackageName": "example",
     "Description": "Project description...",
