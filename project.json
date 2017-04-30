@@ -1,0 +1,11 @@
+{
+    "ProjectName": "Example-Project",
+    "PackageName": "example",
+    "Description": "Project description...",
+    "Author": "James Stidard",
+    "Email": "james@stidard.com",
+    "License": ["MIT"],
+    "AsyncIO": false,
+    "GitHubRepository": "USER|ORG/Example-Project",
+    "GitHubPrivate": true
+}
