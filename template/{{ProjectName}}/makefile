@@ -2,7 +2,7 @@ git:
 	git init
 	git add .
 	git commit -m "init"
-	hub create {{if GitHubPrivate}} -p {{end}} "{{GitHubRepository}}"
+	hub create {{if GitHubPrivate}} -p {{end}}"{{GitHubRepository}}"
 	git push -u origin master
 venv:
 	pyenv install -s {{PythonVersion}}; \
