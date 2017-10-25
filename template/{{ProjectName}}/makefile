@@ -7,6 +7,6 @@ git:
 venv:
 	pyenv install -s {{PythonVersion}}; \
 	pyenv local {{PythonVersion}}; \
-	python -m venv "~/.virtualenvs/{{ProjectName}}"; \
-	source "~/.virtualenvs/{{ProjectName}}/bin/activate"; \
+	python -m venv ~/.virtualenvs/"{{ProjectName}}"; \
+	source ~/.virtualenvs/"{{ProjectName}}"/bin/activate; \
 	pip install -r requirements/development.txt;
