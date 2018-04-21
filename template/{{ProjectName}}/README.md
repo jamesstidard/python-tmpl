@@ -1,14 +1,31 @@
 # {{ProjectName}}
 {{Description}}
 
-## Run
+## Install
+### Locally
 ```bash
-$ pip install -r requirements.txt
-$ python {{PackageName}}
+$ pipenv install
+$ pipenv shell
+```
+
+### Container
+```bash
+$ docker build -t {{PackageName}} .
+$ CID=`docker run -d {{PackageName}}`
+$ docker exec -it $CID /bin/bash
+...
+$ docker stop $CID; docker rm $CID
+```
+
+## Run
+Assuming you are in a active virtual environment or container.
+```bash
+$ {{PackageName}}
 ```
 
 ## Test
+Assuming you are in a active virtual environment or container.
 ```bash
-$ pip install -r requirements/development.txt
+$ pipenv install --dev
 $ pytest
 ```
